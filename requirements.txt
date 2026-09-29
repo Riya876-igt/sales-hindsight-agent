@@ -1,0 +1,5 @@
+streamlit
+openai
+hindsight-client
+pypdf
+python-docx
