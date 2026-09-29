@@ -1,0 +1,222 @@
+{
+  "customers": {
+    "Dr Sharma": {
+      "created": "2026-09-28T12:47:52+00:00",
+      "interactions": []
+    },
+    "Oracle Hospital": {
+      "created": "2026-09-28T12:48:17+00:00",
+      "interactions": []
+    },
+    "Acme Corp": {
+      "created": "2026-09-28T14:46:13+00:00",
+      "interactions": [
+        {
+          "id": "75f6b887",
+          "date": "2026-09-28",
+          "ts": "2026-09-28T14:46:13+00:00",
+          "title": "Discovery call",
+          "summary": "IT Director Sarah liked native SSO and security, but procurement said the $100k quote exceeds their $85k Q3 budget.",
+          "raw": "Discovery call with Acme Corp. Evaluated our Enterprise tier. IT Director Sarah loved our native SSO and security features. However, procurement flagged that our $100k proposed quote is 18% over their allocated Q3 budget ceiling ($85,000).",
+          "needs": [
+            "SSO",
+            "security"
+          ],
+          "objections": [
+            "Pricing"
+          ],
+          "competitors": [],
+          "next_action": "Revise quote to fit budget",
+          "stage": "Discovery",
+          "interest": "High",
+          "source": "text",
+          "synced": true
+        },
+        {
+          "id": "2159d2d4",
+          "date": "2026-09-28",
+          "ts": "2026-09-28T14:50:11+00:00",
+          "title": "Follow-up meeting with CFO",
+          "summary": "Met with CFO Marcus Webb who noted Apex Systems is 20% cheaper but lacks SOC2 compliance and native SSO, prefers written briefings and a phased rollout across two quarters.",
+          "raw": "Follow-up meeting with CFO Marcus Webb (economic buyer). Acme is currently evaluating Apex Systems as a lower-cost alternative. Apex quoted 20% cheaper, but Marcus acknowledged Apex lacks SOC2 compliance and native SSO. Marcus prefers short written briefings over live demos and requested a phased rollout option to split costs across two quarters.",
+          "needs": [
+            "written briefings",
+            "phased rollout"
+          ],
+          "objections": [
+            "Pricing",
+            "Compliance"
+          ],
+          "competitors": [
+            "Apex Systems"
+          ],
+          "next_action": "Prepare written brief and phased rollout proposal",
+          "stage": "Proposal",
+          "interest": "High",
+          "source": "text",
+          "synced": true
+        }
+      ]
+    }
+  },
+  "selected_customer": "Dr Sharma",
+  "product": null,
+  "chats": [
+    {
+      "id": "18a29638",
+      "title": "Discovery call with Acme Corp. Evaluated our Enterprise tie…",
+      "customer": "Acme Corp",
+      "updated": "2026-09-28T14:48:49+00:00",
+      "messages": [
+        {
+          "role": "user",
+          "kind": "text",
+          "content": "Discovery call with Acme Corp. Evaluated our Enterprise tier. IT Director Sarah loved our native SSO and security features. However, procurement flagged that our $100k proposed quote is 18% over their allocated Q3 budget ceiling ($85,000)."
+        },
+        {
+          "role": "assistant",
+          "kind": "text",
+          "content": "That sounds like a **daily update**. Review what I extracted below and confirm to add it to customer memory."
+        },
+        {
+          "role": "assistant",
+          "kind": "text",
+          "content": "✓ Saved to **Acme Corp** memory. Ask me anything about this deal, or tap “Prepare for my next call”."
+        },
+        {
+          "role": "user",
+          "kind": "text",
+          "content": "Prepare me for my next call"
+        },
+        {
+          "role": "assistant",
+          "kind": "briefing",
+          "data": {
+            "headline": "Acme Corp – Align Enterprise tier SSO/security to $85k Q3 budget",
+            "highlights": [
+              "Discovery call on 2026-09-28: IT Director Sarah liked native SSO and security",
+              "Current quote: $100,000 exceeds Acme's $85,000 Q3 budget ceiling",
+              "High interest in Enterprise tier features, no competitor involvement",
+              "Pricing objection is the sole barrier",
+              "Next action: revised quote to fit $85k budget"
+            ],
+            "discussion": [
+              "Confirm Sarah’s top priorities for SSO and security within the Enterprise tier",
+              "Present a revised pricing scenario that meets the $85,000 budget",
+              "Explore any scope adjustments (e.g., licensing count, optional modules) to stay within budget",
+              "Validate procurement’s approval process and timeline for Q3",
+              "Agree on next steps and timeline for final sign‑off"
+            ],
+            "watch_outs": [
+              "Budget ceiling may be firm; ensure revised quote does not exceed $85k",
+              "Potential hidden costs (implementation, support) that could raise total spend",
+              "Procurement may request additional discounts or concessions"
+            ]
+          },
+          "customer": "Acme Corp",
+          "sources": [
+            {
+              "text": "The next action is to revise the quote to fit the $85,000 budget. | Involving: user",
+              "type": "world",
+              "when": "2026-09-28T14:46:13.030000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Acme Corp procurement rejected the $100,000 quote because it exceeds their $85,000 Q3 budget ceiling. | When: 2026-09-28 | Involving: Acme Corp procurement | Pricing objection",
+              "type": "world",
+              "when": "2026-09-28T14:46:13.020000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Acme Corp evaluated the Enterprise tier and expressed interest in native SSO and security features.",
+              "type": "observation",
+              "when": "2026-09-28T14:46:13.010000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Acme Corp evaluated the Enterprise tier during a discovery call. | When: 2026-09-28 | Involving: Sarah (IT Director at Acme Corp)",
+              "type": "world",
+              "when": "2026-09-28T14:46:13+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Sarah (IT Director at Acme Corp) expressed interest in native SSO and security features. | When: 2026-09-28 | Involving: Sarah (IT Director at Acme Corp)",
+              "type": "world",
+              "when": "2026-09-28T14:46:13.010000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Acme Corp rejected a $100,000 quote due to a $85,000 Q3 budget ceiling; the quote is being revised to meet this limit.",
+              "type": "observation",
+              "when": "2026-09-28T14:46:13.030000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Sarah is the IT Director at Acme Corp.",
+              "type": "observation",
+              "when": "2026-09-28T14:46:13+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Riya Shirsath created her account for OutStride AI at Straumann on September 28, 2026.",
+              "type": "observation",
+              "when": "2026-09-28T12:18:42.010000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Riya Shirsath works as a Sales Manager at Straumann. | Involving: Riya Shirsath",
+              "type": "world",
+              "when": "2026-09-28T12:18:42+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Riya Shirsath works as a Sales Manager at Straumann.",
+              "type": "observation",
+              "when": "2026-09-28T12:18:42+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Riya Shirsath created her account. | When: 2026-09-28 | Involving: Riya Shirsath",
+              "type": "world",
+              "when": "2026-09-28T12:18:42.010000+00:00",
+              "scope": "customer"
+            },
+            {
+              "text": "Riya Shirsath created an account for OutStride AI at Straumann. | When: 2026-09-28 | Involving: Riya Shirsath",
+              "type": "world",
+              "when": "2026-09-28T12:18:13+00:00",
+              "scope": "customer"
+            }
+          ],
+          "warns": [],
+          "content": "Call briefing"
+        }
+      ],
+      "created": "2026-09-28T14:45:39+00:00"
+    },
+    {
+      "id": "50fd3a6e",
+      "title": "Follow-up meeting with CFO Marcus Webb (economic buyer). Ac…",
+      "customer": "Acme Corp",
+      "updated": "2026-09-28T14:50:14+00:00",
+      "messages": [
+        {
+          "role": "user",
+          "kind": "text",
+          "content": "Follow-up meeting with CFO Marcus Webb (economic buyer). Acme is currently evaluating Apex Systems as a lower-cost alternative. Apex quoted 20% cheaper, but Marcus acknowledged Apex lacks SOC2 compliance and native SSO. Marcus prefers short written briefings over live demos and requested a phased rollout option to split costs across two quarters."
+        },
+        {
+          "role": "assistant",
+          "kind": "text",
+          "content": "That sounds like a **daily update**. Review what I extracted below and confirm to add it to customer memory."
+        },
+        {
+          "role": "assistant",
+          "kind": "text",
+          "content": "✓ Saved to **Acme Corp** memory. Ask me anything about this deal, or tap “Prepare for my next call”."
+        }
+      ],
+      "created": "2026-09-28T14:50:08+00:00"
+    }
+  ]
+}
