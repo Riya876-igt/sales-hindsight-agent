@@ -22,10 +22,16 @@ from pathlib import Path
 import streamlit as st
 from openai import OpenAI
 import asyncio
-import nest_asyncio
 
-# Patch asyncio to allow nested event loops in Streamlit
-nest_asyncio.apply()
+
+def run_async(coro):
+    """Safely runs an async Hindsight method in an isolated event loop."""
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        return loop.run_until_complete(coro)
+    finally:
+        loop.close()
 
 try:
     from hindsight_client import Hindsight
