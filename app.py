@@ -21,6 +21,11 @@ from pathlib import Path
 
 import streamlit as st
 from openai import OpenAI
+import asyncio
+import nest_asyncio
+
+# Patch asyncio to allow nested event loops in Streamlit
+nest_asyncio.apply()
 
 try:
     from hindsight_client import Hindsight

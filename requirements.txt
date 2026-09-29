@@ -3,3 +3,4 @@ openai
 hindsight-client
 pypdf
 python-docx
+nest-asyncio
